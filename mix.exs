@@ -5,7 +5,7 @@ defmodule Tirexs.Mixfile do
     [ app: :tirexs, version: "0.7.0", elixir: "~> 1.0.0", description: description, package: package, deps: deps ]
   end
 
-  def application, do: []
+  def application, do: [:exjsx, :inets]
 
   defp deps do
     [ {:exjsx, github: "talentdeficit/exjsx", tag: "v3.1.0"} ]
